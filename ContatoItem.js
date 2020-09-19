@@ -4,8 +4,8 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 const ContatoItem = (props) => {
   return (
     <TouchableOpacity onPress={() => props.remove(props.chave)}>
-      <View style={estilos.itemNaLista}>
-        <Text style={estilos.titulo}>Contato de Usuario</Text>
+      <View style={estilos.ListaItem}>
+        <Text style={estilos.titulo}>Contato do Usuario</Text>
         <Text style={estilos.item}>Nome: {props.contato[0]}</Text>
         <Text style={estilos.item}>Telefone: {props.contato[1]}</Text>
       </View>
@@ -23,7 +23,7 @@ const estilos = StyleSheet.create({
     marginBottom: 4,
     fontSize: 18,
   },
-  itemNaLista: {
+  ListaItem: {
     width: 560,
     padding: 22,
     backgroundColor: "#5F6062",
